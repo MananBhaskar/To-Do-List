@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   BrowserRouter as Router,
   Route,
@@ -60,7 +59,7 @@ function App() {
     </Router>
   );
 }
-=======
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { MdOutlineDone } from "react-icons/md";
@@ -247,5 +246,4 @@ function App() {
   );
 }
 
->>>>>>> bcd9c64f61c748113f11fe5c4fa9d3a78688cc35
 export default App;
