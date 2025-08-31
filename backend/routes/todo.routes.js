@@ -26,7 +26,11 @@ router.post("/", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
+// update a todo (text and/or completed)
+=======
 // update a todo(text and/or completed)
+>>>>>>> bcd9c64f61c748113f11fe5c4fa9d3a78688cc35
 router.patch("/:id", async (req, res) => {
   try {
     const todo = await Todo.findById(req.params.id);
@@ -50,9 +54,15 @@ router.patch("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     await Todo.findByIdAndDelete(req.params.id);
+<<<<<<< HEAD
+    res.json({ message: "Todo deleted!" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+=======
     res.json({ messsage: "Todo deleted!" });
   } catch (error) {
     res.status(500).json({ message: err.message });
+>>>>>>> bcd9c64f61c748113f11fe5c4fa9d3a78688cc35
   }
 });
 
